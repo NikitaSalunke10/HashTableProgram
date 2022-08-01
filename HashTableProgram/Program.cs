@@ -22,10 +22,13 @@ hash.Add("16", "paranoid");
 hash.Add("17", "avoidable");
 hash.Add("18", "situations");
 
-string[] words = new string[18];
-for (int i = 0; i < words.Length; i++)// for loop is used to store the hash values in string array
-{
-    string key = i.ToString();
-    words[i] = hash.Get(key).ToLower(); // one by one the values are retrived and store at each key
-}
-hash.FindFrequency(words); //method is called to find the count of words
+hash.Remove("17");
+Console.WriteLine("\nWord is removed.");
+
+//string[] words = new string[18];
+//for (int i = 0; i < words.Length; i++)// for loop is used to store the hash values in string array
+//{
+//    string key = i.ToString();
+//    words[i] = hash.Get(key).ToLower(); // one by one the values are retrived and store at each key
+//}
+//hash.FindFrequency(words); //method is called to find the count of words
