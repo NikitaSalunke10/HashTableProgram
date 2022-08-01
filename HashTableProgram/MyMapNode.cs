@@ -80,7 +80,7 @@ namespace HashTableProgram
         public void FindFrequency(string[] words) // this method is used to find the count of each word
         {
             Dictionary<string, int> WordFrequency = new Dictionary<string, int>();
-            foreach (string word in words) // foreach loop is used to get one value at a time
+            foreach (string word in words)
             {
                 if (WordFrequency.ContainsKey(word)) // this condition is to check whether the dictionary already contains the word or not
                 {// if condition becomes true it means that word is already present and then the value is increment by 1
@@ -91,10 +91,10 @@ namespace HashTableProgram
                     WordFrequency.Add(word, 1);
                 }
             }
-            Console.WriteLine("\nThe Frequency of Words are: \nWord  Count");
+            Console.WriteLine("\nThe Frequency of Words are: \nCount    Word");
             foreach (var word in WordFrequency) // foreach loop is used to print the dictionary
             {
-                Console.WriteLine(word.Key + "     " + word.Value);
+                Console.WriteLine(word.Value + "\t" + word.Key);
             }
         }
     }
