@@ -12,6 +12,7 @@ string hash5 = hash.Get("5");
 Console.WriteLine("5th index value: " + hash5);
 string hash2 = hash.Get("2");
 Console.WriteLine("2th index value: " + hash2);
+
 string[] words = new string[6];
 for (int i = 0; i < words.Length; i++)// for loop is used to store the hash values in string array
 {
